@@ -26,16 +26,16 @@ public abstract class BaseNiceDialog extends DialogFragment {
     private static final String ANIM = "anim_style";
     private static final String LAYOUT = "layout_id";
 
-    private int margin;//左右边距
-    private int width;//宽度
-    private int height;//高度
-    private float dimAmount = 0.5f;//灰度深浅
-    private int gravity = Gravity.CENTER;//显示的位置
-    private boolean outCancel = true;//是否点击外部取消
+    protected int margin;//左右边距
+    protected int width;//宽度
+    protected int height;//高度
+    protected float dimAmount = 0.5f;//灰度深浅
+    protected int gravity = Gravity.CENTER;//显示的位置
+    protected boolean outCancel = true;//是否点击外部取消
     @StyleRes
     protected int theme = R.style.NiceDialogStyle; // dialog主题
     @StyleRes
-    private int animStyle;
+    protected int animStyle;
     @LayoutRes
     protected int layoutId;
 
